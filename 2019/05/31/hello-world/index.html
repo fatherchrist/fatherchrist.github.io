@@ -70,7 +70,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fatherchrist.github.io/2019/05/31/hello-world/" data-id="cjwbe3jog0000ssctcc7a530v" class="article-share-link">Share</a>
+      <a data-url="https://fatherchrist.github.io/2019/05/31/hello-world/" data-id="cjwbg1f5i0000ekctuux2xit8" class="article-share-link">Share</a>
       
     </footer>
 
@@ -97,6 +97,26 @@
 
   
     
+  <div class="gitalk" id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: 'be0baaf5fd4875b2b29f',
+      clientSecret: 'a06b9b34c9b237f5c0d531fb656c0b9872040e3a',
+      repo: 'https://github.com/fatherchrist/fatherchrist.github.io.git',
+      owner: 'fatherchrist',
+      admin: ['fatherchrist'],
+      // id: location.pathname,      // Ensure uniqueness and length less than 50
+      id: md5(location.pathname),
+      distractionFreeMode: false,  // Facebook-like distraction free mode
+      pagerDirection: 'last'
+    })
+
+  gitalk.render('gitalk-container')
+  </script>
+
   
 
 </article>
@@ -111,8 +131,6 @@
       <ul class="list-inline">
   
     <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
-  
-    <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
   
 </ul>
     </div>
@@ -193,6 +211,8 @@
   <script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
+
+  <script src="/js/search.js"></script>
 
 
 <script src="/js/ocean.js"></script>
