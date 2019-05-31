@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[myBlog]]></title>
     <url>%2F2019%2F05%2F31%2FmyBlog%2F</url>
-    <content type="text"><![CDATA[this is a titlethis is a little titlethis is a image sfsdfasdfasdf sdafadsffasdf 1console.log(&quot;dfadfasf&quot;); dfdf dfdf dfdfdfdf]]></content>
+    <content type="text"><![CDATA[this is a titlethis is a little titlethis is a image sfsdfasdfasdf sdafadsffasdf 1console.log(&quot;dfadfasf&quot;); 这是一句中文; dfdf dfdf dfdfdfdf]]></content>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
