@@ -107,11 +107,22 @@
 <li>输出字体能否调节的大一号</li>
 </ol>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>我用的是ocean主题, 题主也详细介绍了它的配置和gitalk的配置,非常详细,点击页脚的ocean到题主的git主页就能看到. 我的RSS订阅没有做, 感觉作用不大.<br>还有其他的一些细节的配置,在官方文档中能看到. </p>
+<hr>
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><p>微博图床开始限制外链了</p>
+<p>记录一下操作方法。</p>
+<blockquote>
+<p>N:\blog\themes\jacman\layout_partial\head.ejs</p>
+</blockquote>
+<p>修改上述路径的文件，jacman是所用的主题文件夹。因为每个页面都会包含head这个文件，在里面加上一行代码</p>
+<blockquote>
+<meta name="referrer" content="no-referrer">
+</blockquote>
+<p>这样所有页面都会以no-referrer这样方法加载了，然后微博服务器就不知道是你的网站引用了他的图片了. 对于about页面不起作用, 可以用oss来代替.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fatherchrist.github.io/2019/05/31/hexo搭建过程/" data-id="cjweddyap0002zsctq5yntpig" class="article-share-link">Share</a>
+      <a data-url="https://fatherchrist.github.io/2019/05/31/hexo搭建过程/" data-id="cjwednd5000008wcttay4s3x9" class="article-share-link">Share</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 
